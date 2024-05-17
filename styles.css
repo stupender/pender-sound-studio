@@ -281,6 +281,7 @@ a:hover {
         padding-bottom: 5px;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     #about-pic {
         width: 100%;
