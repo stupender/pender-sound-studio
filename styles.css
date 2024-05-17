@@ -247,7 +247,7 @@ a:hover {
 }
 
 #about-pic {
-    width: 100%;
+    width: 50%;
 }
 
 /* MOBILE */
@@ -274,5 +274,9 @@ a:hover {
   .contact-group {
         padding-bottom: 5px;
   }
+  #about-pic {
+        width: 100%;
+  }
+
   
 }
