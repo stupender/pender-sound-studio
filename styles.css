@@ -31,6 +31,12 @@ nav {
     justify-content: space-between;
 }
 
+.contact-group {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
 .about-container {
     margin-left: 5%;
     margin-right: 5%;
@@ -270,13 +276,13 @@ a:hover {
         padding-top: 5px;
         align-items: start;
         align-content: center;
-  }
-  .contact-group {
+    }
+    .contact-group {
         padding-bottom: 5px;
-  }
-  #about-pic {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #about-pic {
         width: 100%;
-  }
-
-  
+    }
 }
