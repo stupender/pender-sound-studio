@@ -279,6 +279,7 @@ a:hover {
     }
     .contact-group {
         padding-bottom: 5px;
+        padding-top: 10px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
