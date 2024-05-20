@@ -93,7 +93,6 @@ button:hover {
 
 }
 
-
 .teaching-container {
     margin-left: 5%;
     margin-right: 5%;
@@ -124,21 +123,6 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
 }
-
-.show {
-    display: flex;
-}
-
-.showing {
-    background-color: black;
-    color: #e0e0e0;
-}
-
-/* .showing:hover {
-    background-color: rgb(196, 196, 196);
-    color: black;
-    border-bottom: 1px solid black;
-} */
 
 .content-grid-container {
     margin-left: 15%;
@@ -270,6 +254,59 @@ a:hover {
     width: 50%;
 }
 
+
+/* TESTIMONIALS */
+
+.testimonials {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 15px;
+    /* border-top: 1px solid #0000001c; */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: rgb(24 24 24);
+    color: #e0e0e0;
+    overflow-x: hidden;
+    display: none;
+}
+
+.horizontal-scrolling-items {
+    display: none;
+    animation-name: infiniteScroll;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }  
+
+.horizontal-scrolling-items__item {
+    white-space: nowrap;
+    font-size: .75em;
+    margin-right: 10px;
+  }
+
+  @keyframes infiniteScroll {
+    from {transform: translateX(0) }
+    to {transform: translateX(calc(0px - 50%));}
+  }  
+  
+
+
+.show {
+    display: flex;
+}
+
+.showing {
+    background-color: black;
+    color: #e0e0e0;
+}
+
+/* .showing:hover {
+    background-color: rgb(196, 196, 196);
+    color: black;
+    border-bottom: 1px solid black;
+} */
+
+
 /* MOBILE */
 @media only screen and (max-width: 600px) {
     nav {
@@ -304,4 +341,15 @@ a:hover {
     #filters {
         margin-top: 15px;
     }
+    .testimonials {
+        margin-left: 0;
+        margin-right: 0;
+    }    
+    .horizontal-scrolling-items {
+        animation-name: infiniteScroll;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    
 }
