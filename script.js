@@ -11,6 +11,9 @@ let teachingCard = document.querySelector(".teaching-container")
 let personalCard = document.querySelector(".personal-container");
 let collaborationCard = document.querySelector(".collaboration-container");
 
+let testimonialScroll = document.querySelector(".testimonials");
+let scrollingItems = document.querySelector(".horizontal-scrolling-items");
+
 // Event Listeners
 aboutButton.addEventListener("click", displayAbout);
 contactButton.addEventListener("click", displayContact);
@@ -26,6 +29,9 @@ function displayAbout() {
 
 function displayTeaching() {
     teachingCard.classList.toggle("show");
+    testimonialScroll.classList.toggle("show");
+    scrollingItems.classList.toggle("show");
+
     teachingButton.classList.toggle("showing");
 }
 
