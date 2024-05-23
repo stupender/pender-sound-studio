@@ -264,7 +264,8 @@ a:hover {
     /* border-top: 1px solid #0000001c; */
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
-    background-color: rgb(24 24 24);
+    /* background-color: rgb(24 24 24); */
+    background-color: rgb(228 107 108);
     color: #e0e0e0;
     overflow-x: hidden;
     display: none;
@@ -273,7 +274,7 @@ a:hover {
 .horizontal-scrolling-items {
     display: none;
     animation-name: infiniteScroll;
-    animation-duration: 35s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }  
@@ -286,10 +287,8 @@ a:hover {
 
   @keyframes infiniteScroll {
     from {transform: translateX(0) }
-    to {transform: translateX(calc(0px - 50%));}
+    to {transform: translateX(calc(0px - 100%));}
   }  
-  
-
 
 .show {
     display: flex;
@@ -347,9 +346,11 @@ a:hover {
     }    
     .horizontal-scrolling-items {
         animation-name: infiniteScroll;
-        animation-duration: 30s;
+        animation-duration: 100s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
-    
+      .horizontal-scrolling-items__item {
+        font-size: .75em;
+      }
 }
