@@ -151,6 +151,13 @@ button:hover {
     font-weight: 400;
 }
 
+.testimonial-title {
+    margin-right: 10px;
+    font-size: .75em;
+    color: black;
+    font-weight: 400;
+}
+
 .body-title {
     margin-right: 10px;
     font-size: .75em;
@@ -260,7 +267,8 @@ a:hover {
 .testimonials {
     margin-left: 5%;
     margin-right: 5%;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* border-top: 1px solid #0000001c; */
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
@@ -282,7 +290,10 @@ a:hover {
 .horizontal-scrolling-items__item {
     white-space: nowrap;
     font-size: .75em;
-    margin-right: 10px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
 
   @keyframes infiniteScroll {
