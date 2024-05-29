@@ -4,12 +4,14 @@ let contactButton = document.querySelector(".contact");
 let teachingButton = document.querySelector(".teaching");
 let personalButton = document.querySelector(".personal");
 let collaborationButton = document.querySelector(".collaboration");
+let eventsButton = document.querySelector(".events");
 
 let aboutCard = document.querySelector(".about-container");
 let contactCard = document.querySelector(".contact-container");
 let teachingCard = document.querySelector(".teaching-container")
 let personalCard = document.querySelector(".personal-container");
 let collaborationCard = document.querySelector(".collaboration-container");
+let eventsCard = document.querySelector(".events-container");
 
 let testimonialScroll = document.querySelector(".testimonials");
 let scrollingItems = document.querySelector(".horizontal-scrolling-items");
@@ -20,6 +22,7 @@ contactButton.addEventListener("click", displayContact);
 teachingButton.addEventListener("click", displayTeaching);
 collaborationButton.addEventListener("click", displayCollaboration);
 personalButton.addEventListener("click", displayPersonal);
+eventsButton.addEventListener("click", displayEvents);
 
 // Functions
 function displayAbout() {
@@ -34,6 +37,12 @@ function displayTeaching() {
 
     teachingButton.classList.toggle("showing");
 }
+
+function displayEvents() {
+  eventsCard.classList.toggle("show");
+  eventsButton.classList.toggle("showing");
+}
+
 
 function displayContact() {
     contactCard.classList.toggle("show");
