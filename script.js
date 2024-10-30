@@ -59,7 +59,7 @@ function displayPersonal() {
     personalButton.classList.toggle("showing");
 }
 
-displayAbout();
+displayTeaching();
 
 
 // Generative Music Player
