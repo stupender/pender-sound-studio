@@ -60,7 +60,7 @@ function displayPersonal() {
 }
 
 displayTeaching();
-
+displayAbout();
 
 // Generative Music Player
 
