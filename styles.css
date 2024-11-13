@@ -45,6 +45,25 @@ button:hover {
     color: #e0e0e0;
 }
 
+.button-link {
+    background-color: rgb(24 24 24);
+    color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    padding: 10px
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding: 10px;
+    font-size: .9em;
+    text-align: justify;
+    margin: 30px 30px;
+}
+
+.button-link:hover {
+    background-color: #e0e0e0;
+    color: rgb(24 24 24);
+}
+
 .contact-group {
     padding-bottom: 5px;
     display: flex;
