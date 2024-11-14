@@ -9,20 +9,22 @@
             <link rel="icon" href="images/chicago.jpeg"/>
             <meta property="og:title" content="Stu Pender"/>
             <meta property="og:image" content="images/chicago.jpeg"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display&display=swap" rel="stylesheet">        
+            <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display&display=swap" rel="stylesheet">
         </head>
         <body>
             <header>
                 <h1>Stu Pender</h1>
-<!--                 <h2>[Pender Sound Studio]</h2>  -->
+                <h2>[Pender Sound Studio]</h2> 
             </header>
             <nav>
                 <a href="#" class="teaching">Teaching</a>
-                <a href="#" class="about">About</a>
                 <a href="#" class="events">Events</a>
                 <a href="#" class="contact">Links</a>
-                <button>Play</button>
+                <a href="#" class="about">About</a>
+                <button class="play">Play</button>
     
     
                 <div id="filters">
@@ -41,10 +43,7 @@
                     <p class="contact-title">CALENDLY</p> 
                     <a href="https://calendly.com/stupender/lesson" class="contact-link" target="_blank">Schedule 1:1</a>    
                 </div>
-<!--                 <div class="contact-group">
-                    <p class="contact-title">PATREON</p> 
-                    <a href="https://patreon.com/stupender/" class="contact-link" target="_blank">Creative Community</a>    
-                </div> -->
+
                 <div class="contact-group">
                     <p class="contact-title">PAYPAL</p> 
                     <a href="https://paypal.me/stupender?country.x=US&locale.x=en_US" class="contact-link" target="_blank">Payments</a>    
@@ -62,7 +61,7 @@
                     <a href="https://www.youtube.com/@StuPender" class="contact-link" target="_blank">@StuPender</a>    
                 </div> -->
             </div>
-    
+
             <div class="personal-container">
                 <div>
                     <p class="contact-title">PERSONAL</p>
@@ -182,11 +181,25 @@
                     </ul>  
                 </div>
             </div>
-    
-    
+
+            <div class="offers-container">
+                <div class="offers-group">
+                    <p class="contact-title">MUSIC LESSONS</p> 
+                    <a href="#" class="contact-link music-lessons">Information & Booking →</a>    
+                </div>
+                <!-- <div class="offers-group">
+                    <p class="contact-title">SOUND SESSIONS</p> 
+                    <a href="#" class="contact-link sound-sessions">Information & Booking</a>    
+                </div>
+                <div class="offers-group">
+                    <p class="contact-title">SUBSTACK</p> 
+                    <a href="https://sonicspace.substack.com/about" class="contact-link" target="_blank">Sonic Space</a>    
+                </div> -->
+            </div>
+
             <div class="teaching-container">
                 <div class="text-section">
-<!--                     <div>
+                    <!-- <div>
                         <p class="body-title">SONIC SPACE</p>
                         <p id="about-text">
                             This is Sonic Space — a publication dedicated to <i>listening</i>.
@@ -199,24 +212,92 @@
                         </p>
                     </div> -->
                     <div>
-                        <p class="body-title">1:1 LESSONS</p>
+                        <p class="body-title">MUSIC LESSONS</p>
                         <p id="about-text">
-                            For personalized support in the development of your musicianship, Stu offers 1:1 lessons over Zoom, and in-person in New York City.<br><br>
-                            Stu's primary instrument is the guitar. He also teaches music production, songwriting, improvisation, music theory, ear training, and ukulele to students of all ages.<br><br>
-                            Choose from a 45 minute session ($75) or a 60 minute session ($100) and receive personalized guidance, feedback, and practices directed towards your goals.<br><br>
-                            <i>Sliding scale available upon request. Plus, refer a client and get a free session.</i><br><br>
-                            <a href="https://calendly.com/stupender/lesson" class="button-link" target="_blank">Scheduling & Availability → Calendly</a>
+                            For personalized support in the development of your musicianship, I offer 1:1 lessons over Zoom, and in-person in New York City.<br><br>
+                            My primary instrument is the guitar. I also teache music production, songwriting, improvisation, music theory, ear training, and ukulele to students of all ages.<br><br>
+                            Choose from a 45 minute session ($60) or a 60 minute session ($80) and receive personalized guidance, feedback, and practices directed towards your goals.<br><br>
+                            <!-- <i>Sliding scale available upon request. Plus, refer a client and get a free session.</i><br><br> -->
                         </p>
+                        <div class="button-container">
+                            <!-- <a href="#" class="button-link music-lessons flex-button">More Information  →</a> -->
+                            <a href="https://calendly.com/stupender/lesson" class="button-link flex-button" target="_blank">Scheduling & Availability on Calendly →</a>    
+                        </div>
                     </div>
-<!--                     <div>
+                    <!-- <div>
                         <p class="body-title">SOUND SESSIONS</p>
                         <p id="about-text">
                             Sound Session is a 90 minute session for 
                         </p>
-                    </div>
- -->
+                    </div> -->
+
                 </div>
+                <!-- <div id="lesson-pic"></div> -->
                 <img src="images/window.jpg" id="about-pic">
+            </div>
+
+    
+    
+            <div class="music-lessons-container">
+                <div class="text-section">
+                    <div>
+                        <p class="body-subtitle">MUSIC LESSONS</p>
+                        <p id="offer-text">
+                            <b>Connect with your inner musician.</b> Whether you're a beginner, hobbyist, or professional, 1:1 music lessons are designed to help you deepen your musicianship and creativity.<br>
+                            
+                        </p>
+                        <p class="body-subtitle">YOUR MUSICAL JOURNEY</p>
+                        <p id="offer-text">
+                            If you're looking for a way to develop your musical skills and explore new creative potential, 1:1 Music Lessons provide a personalized space to transform your inspiration into a clear path to bringing these sounds to life.<br><br>
+                            
+                            My primary instrument is the guitar. I also work with students on the ukulele and music software such as Ableton Live. <br>
+                        </p>
+                        
+                        <p class="body-subtitle">EXPLORING TOGETHER</p>
+                        <ul class="offer-items" id="offer-text">
+                            <li class="offer-items"><b>Solid Foundations</b> → Informed by top music conservatory training, in areas such as instrumental technique, music theory, ear training, improvisation, songwriting, tunings and more.</li>
+                            <li class="offer-items"><b>Personalized Curriculum</b> → A learning curriculum that is guided by your own unique interest and inspiration.</li>
+                            <li class="offer-items"><b>Mindset Shifts</b> → Overcoming self-limiting beliefs and discovering what is truly resonant for <i>you</i>.</li>
+                            <li class="offer-items"><b>Structured Guidance</b> → Guidance and accountability to optimize your practice and see progress towards your goals.</li>
+                            <!-- <li><b>Equipment</b> → Guidance in choosing the right tools, gear and technology for your needs.</li> -->
+                        </ul>
+
+                        <p class="body-subtitle">MY APPROACH</p>
+                        <p id="offer-text">
+                            Our approach will be rooted in non-judgmental evaluation, celebrating your progress as we move from inspiration to playing music together.
+                            I aim to share anything helpful that I've learned along the way—from my music conservatory trining and career as an internationally touring, performing, and recording artist.<br>
+                        </p>
+
+                        <p class="body-subtitle">WHAT YOU'LL RECIEVE</p>
+                        <ul class="offer-items" id="offer-text">
+                            <li class="offer-items"><b>1:1 Music Lesson</b> over Zoom or in-person in Brooklyn, New York</li>
+                            <li class="offer-items"><b>Session Recording</b> for future reference</li>
+                            <li class="offer-items"><b>Post-Session Resources</b> (such as sheet music, notes, articles, etc.)</li>
+                            <!-- <li><b>Complimentary Access to Sonic Space</b>, a growing community & publication</li> -->
+                            <li class="offer-items"><b>1 Week of 1:1 Support</b> via email or text following our session</li>
+                        </ul>
+                        <div class="text-block">
+                            <p class="body-subtitle">LESSON OPTIONS</p>
+                                <p id="offer-text"><b>Available over Zoom or In-Person in Brooklyn, New York:</b></p>
+                                    <ul class="offer-items" id="offer-text">
+                                        <li class="offer-items">45 minutes → $60</li>
+                                        <li class="offer-items">60 minutes → $80</li>
+                                        <li class="offer-items">90 minutes → $120</li>
+                                    </ul>
+                                <!-- <p id="offer-text"><b>Available over Zoom:</b><br></p>
+                                    <ul id="offer-text">
+                                        <li class="offer-items">30 minutes → $40</li>
+                                    </ul> -->
+                                    <p id="offer-text">
+                                        I reccomend starting with a 60 minute lesson to start, and deciding what feels right from there. For optimal progress, lessons can be scheduled on a weekly basis.<br><br><br>
+                                    </p>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://calendly.com/stupender/lesson" class="button-link" target="_blank">Scheduling & Availability on Calendly →</a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
     
             <div class="testimonials">
