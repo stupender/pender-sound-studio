@@ -74,8 +74,6 @@ div.button-container {
     justify-content: space-between;
 }
 
-
-
 .contact-group {
     padding-bottom: 5px;
     display: flex;
@@ -473,6 +471,21 @@ a:hover {
         justify-content: space-between;
         align-items: center;
     }
+
+    .offers-container {
+        flex-direction: column;
+        padding-top: 5px;
+        align-items: start;
+        align-content: center;
+    }
+    .offers-group {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     
     #about-pic {
         width: 100%;
