@@ -6,6 +6,8 @@ let personalButton = document.querySelector(".personal");
 let collaborationButton = document.querySelector(".collaboration");
 let eventsButton = document.querySelector(".events");
 let musiclessonsButton = document.querySelector(".music-lessons");
+let musiclessons2Button = document.querySelector(".music-lessons-2");
+
 // let soundsessionsButton = document.querySelector(".sound-sessions");
 
 let aboutCard = document.querySelector(".about-container");
@@ -29,6 +31,8 @@ collaborationButton.addEventListener("click", displayCollaboration);
 personalButton.addEventListener("click", displayPersonal);
 eventsButton.addEventListener("click", displayEvents);
 musiclessonsButton.addEventListener("click", displayMusicLessons);
+musiclessons2Button.addEventListener("click", displayMusicLessons);
+
 // soundsessionsButton.addEventListener("click", displaySoundSessions);
 
 // Functions
@@ -40,16 +44,16 @@ function displayAbout() {
 function displayTeaching() {
   if (teachingCard.classList.contains('show')) {
     teachingCard.classList.remove("show");
-    offersCard.classList.remove("show");
     testimonialScroll.classList.remove("show");
     scrollingItems.classList.remove("show");
+    // offersCard.classList.remove("show");
     // musiclessonsCard.classList.toggle("show");
     teachingButton.classList.remove("showing");
   } else {
     teachingCard.classList.add("show");
-    offersCard.classList.add("show");
     testimonialScroll.classList.add("show");
     scrollingItems.classList.add("show");
+    offersCard.classList.remove("show");
     // musiclessonsCard.classList.toggle("show");
     teachingButton.classList.add("showing");
   }
@@ -57,12 +61,12 @@ function displayTeaching() {
   if (musiclessonsButton.classList.contains('showing')) {
       musiclessonsButton.classList.remove('showing');
   }
+
   if (musiclessonsCard.classList.contains('show')) {
       musiclessonsCard.classList.remove('show');
       // musiclessonsButton.classList.remove('showing');
       teachingButton.classList.add("showing");
       // teachingCard.classList.remove("show");
-      offersCard.classList.add("show");
   }
 }
 
@@ -70,6 +74,7 @@ function displayMusicLessons() {
   teachingCard.classList.toggle("show");
   musiclessonsCard.classList.toggle("show");
   musiclessonsButton.classList.toggle("showing");
+  offersCard.classList.toggle("show");
 
   // if (aboutCard.classList.contains('show')) {
   //   aboutCard.classList.remove("show");
