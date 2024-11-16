@@ -1,7 +1,7 @@
 html {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    background-color: black;
+    background-color: rgb(24 24 24);
 }
 
 body {
@@ -33,8 +33,8 @@ nav {
 
 button {
     background-color: #e0e0e0;
-    color: black;
-    border: 1px solid black;
+    color: rgb(24 24 24);
+    border: 1px solid rgb(24 24 24);
     width: 60px;
     font-family: 'Montserrat', sans-serif;
     font-size: .75em;
@@ -217,7 +217,7 @@ div.button-container {
 }
 
 .contact-title {
-    margin-right: 10px;
+    margin: 0px 10px 0px 0px;
     font-size: .75em;
     color: rgb(228 107 108);
     font-weight: 400;
@@ -226,7 +226,7 @@ div.button-container {
 .testimonial-title {
     margin-right: 10px;
     font-size: .75em;
-    color: black;
+    color: rgb(24 24 24);
     font-weight: 400;
 }
 
@@ -235,9 +235,31 @@ div.button-container {
     font-size: .75em;
     color: rgb(228 107 108);
     font-weight: 400;
-    margin: 30px 30px;
-
+    margin: 30px 30px 0px 30px;
 }
+
+.body-title-alt {
+    margin-right: 10px;
+    font-size: .75em;
+    color: rgb(228 107 108);
+    font-weight: 400;
+    margin: 0px 30px 0px 30px;
+}
+
+.body-link {
+    font-family: 'Chivo', sans-serif;
+    color: #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: .9em;
+    font-weight: 300;
+    margin-left: 30px;
+}
+/* .body-link:hover {
+    color: rgb(24 24 24);
+    border-bottom: 1px solid rgb(24 24 24);
+    background-color: #e0e0e0;
+} */
+
 
 .body-subtitle {
     margin-right: 10px;
@@ -293,7 +315,8 @@ ul {
 }
 
 ul.offer-items {
-    list-style-type: circle;
+    /* list-style-type: circle; */
+    list-style-type: "𖦹 ";
 }
 
 li.offer-items {
@@ -304,8 +327,7 @@ li.offer-items {
     font-family: 'Chivo', sans-serif;
     font-size: .9em;
     font-weight: 300;
-
-}
+ }
 
 #about-text {
     font-family: 'Chivo', sans-serif;
@@ -332,8 +354,8 @@ a {
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
     text-decoration: none;
-    color: black;
-    border-bottom: 1px solid black;
+    color: rgb(24 24 24);
+    border-bottom: 1px solid rgb(24 24 24);
     /* padding: 1px 1px; */
 }
 
@@ -351,27 +373,27 @@ a {
     font-weight: 300;
     text-decoration: none;
     background-color: #e0e0e0;
-    color: black;
+    color: rgb(24 24 24);
     border-bottom: 1px solid #e0e0e0;
     /* padding: 1px 1px; */
 
 }
 
 a:hover {
-    background-color: black;
+    background-color: rgb(24 24 24);
     color: #e0e0e0;
-    /* border-bottom: 1px solid black; */
+    /* border-bottom: 1px solid rgb(24 24 24); */
 }
 
 #about-pic {
     width: 50%;
 }
 
-/* #lesson-pic {
+#lesson-pic {
     width: 50%;
     background-image: url(.images/studio.jpg);
-    height: 100%;
-} */
+    /* height: 100%; */
+}
 
 
 
@@ -424,14 +446,14 @@ a:hover {
 }
 
 .showing {
-    background-color: black;
+    background-color: rgb(24 24 24);
     color: #e0e0e0;
 }
 
 /* .showing:hover {
     background-color: rgb(196, 196, 196);
-    color: black;
-    border-bottom: 1px solid black;
+    color: rgb(24 24 24);
+    border-bottom: 1px solid rgb(24 24 24);
 } */
 
 /* MOBILE */
