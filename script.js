@@ -7,6 +7,9 @@ let collaborationButton = document.querySelector(".collaboration");
 let eventsButton = document.querySelector(".events");
 let musiclessonsButton = document.querySelector(".music-lessons");
 let musiclessons2Button = document.querySelector(".music-lessons-2");
+let soundsessionsButton = document.querySelector(".sound-sessions");
+let soundsessions2Button = document.querySelector(".sound-sessions-2");
+
 
 // let soundsessionsButton = document.querySelector(".sound-sessions");
 
@@ -32,6 +35,9 @@ personalButton.addEventListener("click", displayPersonal);
 eventsButton.addEventListener("click", displayEvents);
 musiclessonsButton.addEventListener("click", displayMusicLessons);
 musiclessons2Button.addEventListener("click", displayMusicLessons);
+soundsessionsButton.addEventListener("click", displaySoundSessions);
+soundsessions2Button.addEventListener("click", displaySoundSessions);
+
 
 // soundsessionsButton.addEventListener("click", displaySoundSessions);
 
@@ -44,6 +50,7 @@ function displayAbout() {
 function displayTeaching() {
   if (teachingCard.classList.contains('show')) {
     teachingCard.classList.remove("show");
+    soundsessionsCard.classList.remove("show");
     testimonialScroll.classList.remove("show");
     scrollingItems.classList.remove("show");
     // offersCard.classList.remove("show");
@@ -51,15 +58,18 @@ function displayTeaching() {
     teachingButton.classList.remove("showing");
   } else {
     teachingCard.classList.add("show");
+    soundsessionsCard.classList.add("show");
     testimonialScroll.classList.add("show");
     scrollingItems.classList.add("show");
     offersCard.classList.remove("show");
     // musiclessonsCard.classList.toggle("show");
     teachingButton.classList.add("showing");
   }
-
   if (musiclessonsButton.classList.contains('showing')) {
       musiclessonsButton.classList.remove('showing');
+  }
+  if (soundsessionsButton.classList.contains('showing')) {
+      soundsessionsButton.classList.remove("showing");
   }
 
   if (musiclessonsCard.classList.contains('show')) {
@@ -68,19 +78,61 @@ function displayTeaching() {
       teachingButton.classList.add("showing");
       // teachingCard.classList.remove("show");
   }
+  if (soundsessionsCard.classList.contains('show')) {
+    soundsessionsCard.classList.remove('show');
+    // musiclessonsButton.classList.remove('showing');
+    teachingButton.classList.add("showing");
+    // teachingCard.classList.remove("show");
+}
+
 }
 
 function displayMusicLessons() {
-  teachingCard.classList.toggle("show");
-  musiclessonsCard.classList.toggle("show");
-  musiclessonsButton.classList.toggle("showing");
-  offersCard.classList.toggle("show");
+  if (teachingCard.classList.contains("show")) {
+    teachingCard.classList.remove("show");
+    musiclessonsCard.classList.add("show");
+    musiclessonsButton.classList.add("showing");
+    offersCard.classList.add("show");
+  } else if (musiclessonsCard.classList.contains("show")) {
+    teachingCard.classList.add("show");
+    musiclessonsCard.classList.remove("show");
+    musiclessonsButton.classList.remove("showing");
+    offersCard.classList.remove("show");
+  } else if (soundsessionsCard.classList.contains('show')) {
+    soundsessionsCard.classList.remove("show");
+    soundsessionsButton.classList.remove("showing");
+    musiclessonsCard.classList.add("show");
+    musiclessonsButton.classList.add("showing");
+  }
 
-  // if (aboutCard.classList.contains('show')) {
-  //   aboutCard.classList.remove("show");
-  //   aboutButton.classList.remove("showing");
+  // musiclessonsCard.classList.toggle("show");
+  // musiclessonsButton.classList.toggle("showing");
+  // offersCard.classList.toggle("show");
+
+  // if (soundsessionsCard.classList.contains('show')) {
+  //   soundsessionsCard.classList.remove("show");
+  //   soundsessionsButton.classList.remove("showing");
   // }
+}
 
+function displaySoundSessions() {
+  if (teachingCard.classList.contains("show")) {
+    teachingCard.classList.remove("show");
+    soundsessionsCard.classList.add("show");
+    soundsessionsButton.classList.add("showing");
+    offersCard.classList.add("show");
+   } else if (soundsessionsCard.classList.contains("show")) {
+    teachingCard.classList.add("show");
+    soundsessionsCard.classList.remove("show");
+    soundsessionsButton.classList.remove("showing");
+    offersCard.classList.remove("show");
+   } else if (musiclessonsCard.classList.contains('show')) {
+    musiclessonsCard.classList.remove("show");
+    musiclessonsButton.classList.remove("showing");
+    soundsessionsCard.classList.add("show");
+    soundsessionsButton.classList.add("showing");
+
+  }
 }
 
 function displayEvents() {
