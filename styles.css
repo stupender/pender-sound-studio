@@ -164,6 +164,18 @@ div.button-container {
     color: #e0e0e0;
 }
 
+.sound-sessions-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-right: 5%; */
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(24 24 24);
+    color: #e0e0e0;
+}
+
 .contact-container {
     margin-left: 5%;
     margin-right: 5%;
@@ -418,6 +430,7 @@ a:hover {
 .testimonial-text {
     font-family: 'Chivo', sans-serif;
     font-size: .9em;
+    /* font-size: 11px; */
     font-style: italic;
 }
 
@@ -532,6 +545,6 @@ a:hover {
     }
     
       .horizontal-scrolling-items__item {
-        font-size: .75em;
+        /* font-size: .75em; */
     }
 }
