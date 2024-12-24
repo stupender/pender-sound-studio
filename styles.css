@@ -17,7 +17,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 15px;
 }
 
@@ -333,7 +333,7 @@ ul.offer-items {
 }
 
 li.offer-items {
-    margin: 15px 0 15px 0; 
+    margin: 15px 0 0 0; 
 }
 
 .contact-link {
@@ -484,12 +484,6 @@ a:hover {
     }
 
     .music-lessons-container {
-        margin-left: 0;
-        margin-right: 0;
-        flex-direction: column;
-    }
-    
-    .sound-sessions-container {
         margin-left: 0;
         margin-right: 0;
         flex-direction: column;
