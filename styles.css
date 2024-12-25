@@ -489,6 +489,12 @@ a:hover {
         flex-direction: column;
     }
 
+    .sound-sessions-container {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+    }
+
     .about-container {
         margin-left: 0;
         margin-right: 0;
