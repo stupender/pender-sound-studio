@@ -33,10 +33,10 @@ teachingButton.addEventListener("click", displayTeaching);
 collaborationButton.addEventListener("click", displayCollaboration);
 personalButton.addEventListener("click", displayPersonal);
 eventsButton.addEventListener("click", displayEvents);
-musiclessonsButton.addEventListener("click", displayMusicLessons);
-musiclessons2Button.addEventListener("click", displayMusicLessons);
-soundsessionsButton.addEventListener("click", displaySoundSessions);
-soundsessions2Button.addEventListener("click", displaySoundSessions);
+// musiclessonsButton.addEventListener("click", displayMusicLessons);
+// musiclessons2Button.addEventListener("click", displayMusicLessons);
+// soundsessionsButton.addEventListener("click", displaySoundSessions);
+// soundsessions2Button.addEventListener("click", displaySoundSessions);
 
 
 // soundsessionsButton.addEventListener("click", displaySoundSessions);
